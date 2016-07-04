@@ -30,7 +30,7 @@ rl.on('line', (input) => {
     return;
   } else {
     console.log(`Recieved: ${input}`)
-    if ( questions[index].answer === input ){
+    if ( questions[index].isRightAnswer(input) ){
       console.log('answer is correct')
     } else {
       console.log('answer is wrong')
